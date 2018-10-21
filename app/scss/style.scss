@@ -1,0 +1,23 @@
+@import "variables";
+
+@import "mixins";
+
+
+body {
+    background-color: $main-color;
+}
+
+nav {
+    background-color: $nav-background;
+
+    ul {
+        li {
+            color: green;
+        }
+    }
+}
+
+.kwadrat {
+    @include super-kwadrat;
+    @include change-kwadrat(50%,400px,300px,blue);
+}

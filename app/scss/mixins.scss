@@ -1,0 +1,17 @@
+@mixin super-kwadrat {
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+@mixin change-kwadrat($rad, $width, $height, $backgr) {
+    border-radius: $rad;
+    width: $width;
+    height: $height;
+    background-color: $backgr;
+}
